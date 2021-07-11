@@ -29,3 +29,38 @@ body {
     background: #FFF;
     border-radius: 10px;
 }
+
+#search-container,
+#conversation-list,
+#new-message-container {
+    background: #0048AA;
+}
+
+#search-container {
+    border-radius: 10px 0 0 0;
+    box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+#new-message-container {
+    border-top: 1px solid rgba(0,0,0,0.25);
+    border-radius: 0 0 0 10px;
+}
+
+#chat-title,
+#chat-form {
+    background: #eee;
+}
+
+#chat-title {
+    color: #0048AA;
+    font-weight: bold;
+    font-size: 2.0rem;
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+#chat-form {
+    border-radius: 0 0 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.25);
+}
