@@ -116,12 +116,30 @@ body {
     padding: 0 20px;
 }
 
-#chat-title > img {
+#chat-title > img,
+#chat-form > img {
     cursor: pointer;
 }
 
 #chat-form {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: 49px;
+    gap: 15px;
+    align-content: center;
+    align-items: center;
     grid-area: chat-form;
     border-radius: 0 0 10px 0;
     border-top: 1px solid rgba(0,0,0,0.25);
+    padding-left: 42px;
+    padding-right: 22px;
+}
+
+#chat-form input {
+    outline: none;
+    padding: 15px;
+    border: 2px solid #ddd;
+    color: #330;
+    border-radius: 6px;
+    font-size: 1.4rem;
 }
