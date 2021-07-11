@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     padding: 0 20px;
+    overflow-y: scroll;
 }
 
 #search-container {
@@ -220,6 +221,15 @@ body {
     font-size: 1.3rem;
     color: #777;
     grid-row: 2;
+    justify-items: start;
+}
+
+.other-message .message-time {
+    grid-column: 2;
+}
+
+.you-message .message-time {
+    align-content: end;
 }
 
 .message-text {
@@ -234,7 +244,13 @@ body {
 }
 
 .other-message {
-    justify-content: start;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 6px;
+}
+
+.message-row img {
+    border-radius: 100%;
 }
 
 .you-message .message-text {
