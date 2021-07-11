@@ -21,6 +21,13 @@ body {
 }
 
 #chat-container {
+    display: grid;
+    grid-template-areas: 
+    'search title'
+    'conversation-list message-list'
+    'new-message-container chat-form';
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 71px 1fr 79px;
     min-width: 800px;
     max-width: 1000px;
     max-height: 800px;
@@ -37,12 +44,18 @@ body {
 }
 
 #search-container {
+    grid-area: search;
     border-radius: 10px 0 0 0;
     box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
     z-index: 1;
 }
 
+#conversation-list {
+    grid-area: conversation-list;
+}
+
 #new-message-container {
+    grid-area: new-message-container;
     border-top: 1px solid rgba(0,0,0,0.25);
     border-radius: 0 0 0 10px;
 }
@@ -53,6 +66,7 @@ body {
 }
 
 #chat-title {
+    grid-area: title;
     color: #0048AA;
     font-weight: bold;
     font-size: 2.0rem;
@@ -61,6 +75,7 @@ body {
 }
 
 #chat-form {
+    grid-area: chat-form;
     border-radius: 0 0 10px 0;
     border-top: 1px solid rgba(0,0,0,0.25);
 }
